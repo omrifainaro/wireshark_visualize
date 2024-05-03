@@ -1,0 +1,43 @@
+protocols = {
+    20: "FTP (Data)",
+    21: "FTP (Control)",
+    22: "SSH",
+    23: "Telnet",
+    25: "SMTP",
+    53: "DNS",
+    67: "DHCP (Server)",
+    68: "DHCP (Client)",
+    69: "TFTP",
+    80: "HTTP",
+    110: "POP3",
+    119: "NNTP",
+    123: "NTP",
+    135: "MSRPC",
+    137: "NetBIOS-NS",
+    138: "NetBIOS-DGM",
+    139: "NetBIOS-SSN",
+    143: "IMAP",
+    161: "SNMP",
+    162: "SNMP Trap",
+    389: "LDAP",
+    443: "HTTPS",
+    445: "SMB",
+    465: "SMTPS",
+    514: "Syslog",
+    636: "LDAPS",
+    993: "IMAPS",
+    995: "POP3S",
+    1433: "MSSQL",
+    1900: "SSDP",
+    3306: "MySQL",
+    3389: "RDP",
+    5060: "SIP",
+    5061: "SIPS",
+    5353: "MDNS",
+    8080: "HTTP (Alt)",
+    # Add more protocols and port numbers as needed
+}
+
+
+def get_protocol_from_port(port) -> str:
+    return protocols.get(port)
